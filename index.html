@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Honk&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>🎮🕹Rock, Paper, Scissors💥🎮</title>
+</head>
+<body>
+<h1 class="title">🎮Rock, Paper, Scissors💥🎮</h1>
+<hr>
+<button class="button" onclick="window.location.reload()">Reload</button>
+<div>
+    <h3>Game result</h3>
+    <div class="user">
+        <h2>User</h2>
+        <p id="user-score">0</p>
+        <div class="buttons">
+            <button onclick="play('Usuario eligio piedra')"><img class="btn_user" src="./assets/piedra.png" alt="rock"></button>
+            <button onclick="play('Usuario eligio papel')"><img class="btn_user" src="./assets/papel.png" alt="paper"></button>
+            <button onclick="play('Usuario eligio tijera')"><img class="btn_user" src="./assets/tijera.png" alt="scissors"></button>
+        </div>
+        <h3 id="message_choice">Here is your choice!</h3>
+        <p id="user-choice"></p>
+    </div>
+    <div class="cpu">
+        <h2>CPU</h2>
+        <p id="cpu-score">0</p>
+        <div class="buttons">
+            <button disabled><img src="./assets/piedra.png" alt="rock"></button>
+            <button disabled><img src="./assets/papel.png" alt="paper"></button>
+            <button disabled><img src="./assets/tijera.png" alt="scissors"></button>
+        </div>
+        <h3 id="message_choice_cpu">The CPU chooses!</h3>
+        <p id="cpu-choice"></p>
+    </div>
+</div>
+<div id="round-result"></div>
+<script src="./app.js"></script>
+</body>
+</html>
